@@ -1,0 +1,260 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  background-color: #f5f5f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0056B3;
+}
+
+p {
+  line-height: 1.6;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button, .header__nav-list-link--highlight, .form__button {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+.button--primary {
+  background-color: #0056B3;
+  color: #fff;
+}
+.button--primary:hover {
+  background-color: #003d80;
+}
+.button--secondary, .header__nav-list-link--highlight {
+  background-color: #00BFFF;
+  color: #fff;
+}
+.button--secondary:hover, .header__nav-list-link--highlight:hover {
+  background-color: #009ACD;
+}
+.button--submit {
+  background-color: #009ACD;
+  color: #fff;
+}
+.button--submit:hover {
+  background-color: #00749a;
+}
+.button--highlight, .form__button {
+  background-color: #00BFFF;
+  color: #fff;
+}
+.button--highlight:hover, .form__button:hover {
+  background-color: #009ACD;
+}
+
+.cards-container, .testimonials__cards, .services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 86, 179, 0.2);
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  flex: 1 1 30%;
+}
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 45%;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+.card__icon {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  display: block;
+}
+.card__circle-image {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 50%;
+}
+.card__content {
+  padding: 10px;
+}
+.card__content-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.card__content-subtitle {
+  font-size: 1em;
+  font-style: italic;
+  color: #0056B3;
+  margin-bottom: 10px;
+}
+.card__content-text {
+  font-size: 1em;
+  color: #555;
+}
+
+.form__group {
+  margin-bottom: 15px;
+}
+.form__group-label {
+  display: block;
+  text-align: start;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form__group-input, .form__group-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form__button {
+  width: 100%;
+}
+
+.header {
+  background-color: #0056B3;
+  color: #fff;
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.header__logo {
+  height: 50px;
+  border-radius: 50%;
+}
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  list-style: none;
+}
+.header__nav-list-item {
+  margin-left: 20px;
+}
+.header__nav-list-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .header__nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav-list-item {
+    margin: 10px 0;
+  }
+}
+
+.footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.footer__links a {
+  text-decoration: none;
+  color: #00BFFF;
+  margin: 0 5px;
+}
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+.welcome {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.welcome__title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #0056B3;
+}
+.welcome__text {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.services {
+  margin: 5px 5px 5px 5px;
+}
+.services__cards {
+  flex-wrap: wrap;
+}
+.services__title {
+  margin-left: 10px;
+}
+
+.testimonials {
+  margin: 20px 5px 5px 5px;
+}
+.testimonials__cards {
+  flex-wrap: wrap;
+}
+.testimonials__title {
+  margin-left: 10px;
+}
+
+.team {
+  padding: 40px 20px;
+  text-align: center;
+}
+.team__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-section {
+  text-align: center;
+}
+.contact-section__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-section__form, .contact-section__map {
+  width: 45%;
+  margin: 10px;
+}
+@media (max-width: 1024px) {
+  .contact-section__form, .contact-section__map {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
