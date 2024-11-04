@@ -18,7 +18,7 @@ p {
   box-sizing: border-box;
 }
 
-.button, .header__nav-list-link--highlight, .form__button {
+.button, .form__button, .header__nav-list-link--highlight {
   display: inline-block;
   padding: 10px 15px;
   border: none;
@@ -112,24 +112,44 @@ p {
   color: #555;
 }
 
-.form__group {
-  margin-bottom: 15px;
+.section {
+  padding: 40px 0;
 }
-.form__group-label {
-  display: block;
-  text-align: start;
-  margin-bottom: 5px;
-  font-weight: bold;
+.section__title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0056B3;
 }
-.form__group-input, .form__group-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 1.75em;
+  }
 }
-.form__button {
-  width: 100%;
+.section__text {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .section__text {
+    padding: 0 10px;
+  }
+}
+.section__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media (max-width: 768px) {
+  .section__content {
+    padding: 0 5px;
+  }
 }
 
 .header {
@@ -192,6 +212,26 @@ p {
 }
 .footer__links a:hover {
   text-decoration: underline;
+}
+
+.form__group {
+  margin-bottom: 15px;
+}
+.form__group-label {
+  display: block;
+  text-align: start;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form__group-input, .form__group-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form__button {
+  width: 100%;
 }
 
 .welcome {
