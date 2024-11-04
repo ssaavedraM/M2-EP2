@@ -68,7 +68,7 @@ El siguiente proyecto muestra el entregable "Ejercicio Práctico 2" que consider
 
 Se utiliza SASS siguiendo el patrón de arquitectura 7-1, utilizando de base el siguiente recurso: https://github.com/tanrax/pattern-7-1.
 
-# Media Queries
+### Media Queries
 Se implementan media queries para asegurar que el sitio web sea completamente responsivo, adaptándose a diferentes tamaños de pantalla (dispositivos móviles, tablets y pantallas de escritorio). Se establecen tres puntos de ruptura principales:
 
 - Pantallas pequeñas (small): Menos de 768px.
@@ -81,40 +81,47 @@ En el archivo `scss/abstracts/_mixins.scss`, se define un mixin para facilitar e
 
 El proyecto sigue el patrón 7-1, que divide los estilos en 7 carpetas principales y un archivo main.scss:
 
-1. abstracts/
+### abstracts/
+
 Contiene los abstractos como variables y mixins que se utilizan en todo el proyecto.
 - _variables.scss: Define variables globales (colores, tipografías, espaciados).
 - _mixins.scss: Contiene mixins reutilizables, como el de media queries.
 
-2. base/
+### base/
+
 Incluye los estilos base y las reglas de reset.
 - _reset.scss: Restablece los estilos predeterminados del navegador.
 - _typography.scss: Define las reglas tipográficas generales.
 - _base.scss: Contiene estilos generales para elementos HTML básicos.
 
-3. components/
+### components/
+
 Contiene los estilos de componentes reutilizables.
 - _button.scss: Estilos para botones.
 - _card.scss: Estilos para tarjetas utilizadas en servicios, testimonios y equipo médico.
 - _form.scss: Estilos para formularios.
 
-4. layout/
+### layout/
+
 Incluye estilos que estructuran el diseño general del sitio.
 - _header.scss: Estilos para el encabezado.
 - _footer.scss: Estilos para el pie de página.
 
-5. pages/
+### pages/
+
 Estilos específicos para páginas particulares.
 - _home.scss: Estilos exclusivos de la página de inicio.
 - _team.scss: Estilos para la página del equipo médico.
 - _contact.scss: Estilos para la página de contacto.
 
-6. themes/
+### themes/
+
 Para estilos temáticos o de personalización.
 - _dark.scss: Estilo para tema oscuro (por realizar)
 - _light.scss: Estilo para tema claro (por realizar)
 
-7. vendors/
+### vendors/
+
 Incluye archivos de terceros o librerías externas.
 - _normalize.scss: Restablece los estilos de los navegadores de forma más completa que un simple reset. Libreria en https://github.com/kristerkari/normalize.scss/tree/master 
 
